@@ -5,6 +5,8 @@ import { Input } from '../../components/ui/Input'
 import { Button } from '../../components/ui/Button'
 import { Lock, Mail, AlertCircle } from 'lucide-react'
 
+const logoUrl = `${import.meta.env.BASE_URL}4s-logo.jpeg`
+
 export function LoginPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -38,7 +40,7 @@ export function LoginPage() {
         <div className="absolute top-1/3 left-4 w-1 h-20 bg-[#d4af37]/15 rounded-full" />
 
         <div className="relative z-10 text-center">
-          <img src="/4s-logo.jpeg" alt="4Sprogram" className="w-48 h-36 object-contain mx-auto mb-8 opacity-90" />
+          <img src={logoUrl} alt="4Sprogram" className="w-48 h-36 object-contain mx-auto mb-8 opacity-90" />
           <h1 className="text-4xl font-black tracking-widest text-white mb-2">4S</h1>
           <div className="flex items-center gap-3 justify-center mb-6">
             <div className="h-px w-12 bg-[#d4af37]" />
@@ -54,7 +56,7 @@ export function LoginPage() {
         <div className="w-full max-w-md">
           {/* Mobile logo */}
           <div className="lg:hidden text-center mb-8">
-            <img src="/4s-logo.jpeg" alt="4Sprogram" className="w-32 h-24 object-contain mx-auto mb-4" />
+            <img src={logoUrl} alt="4Sprogram" className="w-32 h-24 object-contain mx-auto mb-4" />
             <h1 className="text-2xl font-black tracking-widest text-[#0a1628]">4S</h1>
             <p className="text-[#d4af37] text-xs tracking-widest mt-1">PLAYER DEVELOPMENT PROGRAM</p>
           </div>
