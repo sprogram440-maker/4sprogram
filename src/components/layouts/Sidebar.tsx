@@ -28,6 +28,8 @@ const navItems = [
   { to: '/settings', icon: Settings, label: 'الإعدادات' },
 ]
 
+const logoUrl = `${import.meta.env.BASE_URL}4s-logo.jpeg`
+
 export function Sidebar() {
   return (
     <aside className="w-64 bg-[#0a1628] text-white flex flex-col h-full fixed right-0 top-0 bottom-0 z-20">
@@ -35,7 +37,7 @@ export function Sidebar() {
       <div className="px-4 py-5 border-b border-white/10">
         <div className="flex items-center gap-3">
           <img
-            src="/4s-logo.jpeg"
+            src={logoUrl}
             alt="4Sprogram"
             className="w-12 h-12 object-contain shrink-0 rounded-lg"
           />
