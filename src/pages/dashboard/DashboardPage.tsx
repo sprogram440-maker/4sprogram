@@ -11,6 +11,8 @@ import { categorySeedService } from '../../services/categorySeedService'
 import { type Player, type Program } from '../../types'
 import { Users, FolderOpen, UserCog, BarChart3, ClipboardList, Plus, ArrowLeft } from 'lucide-react'
 
+const logoUrl = `${import.meta.env.BASE_URL}4s-logo.jpeg`
+
 export function DashboardPage() {
   const [loading, setLoading] = useState(true)
   const [stats, setStats] = useState({
@@ -44,7 +46,7 @@ export function DashboardPage() {
         {/* Welcome */}
         <div className="bg-gradient-to-l from-[#0a1628] to-[#1e3a6e] rounded-2xl p-6 text-white">
           <div className="flex items-center gap-3 mb-2">
-            <img src="/4s-logo.jpeg" alt="4Sprogram" className="w-10 h-10 object-contain opacity-80" />
+            <img src={logoUrl} alt="4Sprogram" className="w-10 h-10 object-contain opacity-80" />
             <div>
               <h2 className="text-xl font-black tracking-widest text-[#d4af37]">4Sprogram</h2>
               <p className="text-white/50 text-xs tracking-widest">ELITE PLAYER DEVELOPMENT PROGRAM</p>
